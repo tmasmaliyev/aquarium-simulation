@@ -138,6 +138,33 @@ int main()
 	}
 	initOpenGLProgram(window);
 
+	// Print control instructions
+	std::cout << "========================================" << std::endl;
+	std::cout << "  AQUARIUM SIMULATION - CONTROLS" << std::endl;
+	std::cout << "========================================" << std::endl;
+	std::cout << std::endl;
+	std::cout << "CAMERA CONTROLS:" << std::endl;
+	std::cout << "  Left Mouse Button - Hold to rotate camera" << std::endl;
+	std::cout << "  Mouse Movement    - Rotate view (when held)" << std::endl;
+	std::cout << "  Mouse Scroll      - Zoom in/out" << std::endl;
+	std::cout << "  W/S/A/D          - Move camera" << std::endl;
+	std::cout << std::endl;
+	std::cout << "FEATURE TOGGLES:" << std::endl;
+	std::cout << "  F1  - Toggle fog effect" << std::endl;
+	std::cout << "  F2  - Toggle spotlight" << std::endl;
+	std::cout << "  F3  - Toggle directional light" << std::endl;
+	std::cout << "  ESC - Exit application" << std::endl;
+	std::cout << std::endl;
+	std::cout << "DEBUG CONTROLS (Lighting):" << std::endl;
+	std::cout << "  R/F - Spotlight position up/down" << std::endl;
+	std::cout << "  T/G - Spotlight inner cutoff +/-" << std::endl;
+	std::cout << "  Y/H - Spotlight outer cutoff +/-" << std::endl;
+	std::cout << "  U/J - Directional light red +/-" << std::endl;
+	std::cout << "  I/K - Directional light green +/-" << std::endl;
+	std::cout << "  O/L - Directional light blue +/-" << std::endl;
+	std::cout << "========================================" << std::endl;
+	std::cout << std::endl;
+
 	Shader lightShader("./assets/normal.vs", "./assets/normal.fs");
 	Shader defaultShader("./assets/lightEffects.vs", "./assets/lightEffects.fs");
 	lightPosShader = &lightShader;
