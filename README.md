@@ -309,7 +309,3 @@ The custom OBJ parser supports:
 **3D Models:**
 - Tropical fish models: Various sources
 - Rock and treasure models: Custom created
-
-## License
-
-This project is developed as coursework for computer graphics education. All code is provided as-is for educational purposes.
